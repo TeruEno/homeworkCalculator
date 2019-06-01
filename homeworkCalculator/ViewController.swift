@@ -9,17 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    
+//    計算内容表示
      @IBOutlet weak var xLabel: UILabel!
      @IBOutlet weak var yLabel: UILabel!
      @IBOutlet weak var resultLabel: UILabel!
      @IBOutlet weak var signLabel: UILabel!
-     
+    
+//    値の初期値
+    var x = 0
+    var y = 0
+    
      override func viewDidLoad() {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
-     }
+    
+//     計算する処理
+        func calBtn(_ sender: Any) {
+        }
+//     入力内容を消去する
+        func clearBtn(_ sender: Any) {
+            xLabel.text = ""
+            yLabel.text = ""
+            signLabel.text = ""
+        }
+    }
+}
 
-
+// 数字を入力する処理
+extension ViewController{
      @IBAction func num1Btn(_ sender: Any) {
      }
      @IBAction func num2Btn(_ sender: Any) {
@@ -40,6 +59,10 @@ class ViewController: UIViewController {
      }
      @IBAction func num0Btn(_ sender: Any) {
      }
+}
+
+// 符号を選択する処理
+extension ViewController {
      @IBAction func addBtn(_ sender: Any) {
      }
      @IBAction func subBtn(_ sender: Any) {
@@ -48,11 +71,4 @@ class ViewController: UIViewController {
      }
      @IBAction func divBtn(_ sender: Any) {
      }
-     @IBAction func calBtn(_ sender: Any) {
-     }
-     @IBAction func clearBtn(_ sender: Any) {
-     }
-     
-     
 }
-
