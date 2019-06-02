@@ -25,40 +25,32 @@ class ViewController: UIViewController {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
     
-//     計算する処理
-        func calBtn(_ sender: Any) {
-        }
-//     入力内容を消去する
+//     入力内容を初期化する
         func clearBtn(_ sender: Any) {
             xLabel.text = ""
             yLabel.text = ""
             signLabel.text = ""
         }
     }
+    
+    //     計算する処理
+    @IBAction func calBtn(_ sender: Any) {
+    }
+    
+    //     入力内容を消去する
+    @IBAction func clearBtn(_ sender: Any) {
+        xLabel.text = ""
+        yLabel.text = ""
+        signLabel.text = ""
+    }
+    @IBAction func inputNumber(_ sender: UIButton) {
+//        xLabel.text = self
+    }
 }
 
 // 数字を入力する処理
 extension ViewController{
-     @IBAction func num1Btn(_ sender: Any) {
-     }
-     @IBAction func num2Btn(_ sender: Any) {
-     }
-     @IBAction func num3Btn(_ sender: Any) {
-     }
-     @IBAction func num4Btn(_ sender: Any) {
-     }
-     @IBAction func num5Btn(_ sender: Any) {
-     }
-     @IBAction func num6Btn(_ sender: Any) {
-     }
-     @IBAction func num7Btn(_ sender: Any) {
-     }
-     @IBAction func num8Btn(_ sender: Any) {
-     }
-     @IBAction func num9Btn(_ sender: Any) {
-     }
-     @IBAction func num0Btn(_ sender: Any) {
-     }
+
 }
 
 // 符号を選択する処理
