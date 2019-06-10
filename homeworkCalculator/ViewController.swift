@@ -87,6 +87,6 @@ class ViewController: UIViewController {
             xLabel.text = "0"
             yLabel.text = ""
             signLabel.text = ""
-        resultLabel.text   = "0"
+        resultLabel.text   = ""
     }
 }
